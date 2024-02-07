@@ -287,6 +287,7 @@ CreateThread(function()
 					DrawScene(Scene, Player)
 					if IsControlJustPressed(0, GetKey("E")) then
 						TriggerServerEvent("Scene:New", Scene)
+						TriggerEvent('wais:addmissionxp:scene', 1) --added by pamela for wais battlepass
 						Wait(250)
 					end
 				else
